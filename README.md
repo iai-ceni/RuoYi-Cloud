@@ -135,3 +135,24 @@ QQ群： [![加入QQ群](https://img.shields.io/badge/已满-42799195-blue.svg)]
 ## 运行步骤
 
 - [参考文档](http://doc.ruoyi.vip/ruoyi-cloud/document/hjbs.html#%E8%BF%90%E8%A1%8C%E7%B3%BB%E7%BB%9F)
+
+
+### 建立数据库，导入数据
+
+- 两个数据库，主库与`config`，主库中导入 `Qurtz` 表
+
+
+### Nacos
+
+Nacos 安装并修改 `conf/application.properties` 中的数据库后，在 `Nacos` 中可以修改多个配置信息
+
+
+### 运行必要的程序
+
+- 修改 Nacos 中的配置，运行即可
+
+
+### 其他程序
+
+- 修改 Nacos 中的配置，运行即可
+ 
