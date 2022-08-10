@@ -1,4 +1,60 @@
-## 开发
+# 介绍
+
+## 工程结构
+
+~~~
+├── build                      // 构建相关  
+├── bin                        // 执行脚本
+├── public                     // 公共文件
+│   ├── favicon.ico            // favicon图标
+│   └── index.html             // html模板
+├── src                        // 源代码
+│   ├── api                    // 所有请求
+│   ├── assets                 // 主题 字体等静态资源
+│   ├── components             // 全局公用组件
+│   ├── directive              // 全局指令
+│   ├── layout                 // 布局
+│   ├── plugins                // 通用方法
+│   ├── router                 // 路由
+│   ├── store                  // 全局 store管理
+│   ├── utils                  // 全局公用方法
+│   ├── views                  // view
+│   ├── App.vue                // 入口页面
+│   ├── main.js                // 入口 加载组件 初始化等
+│   ├── permission.js          // 权限管理
+│   └── settings.js            // 系统配置
+├── .editorconfig              // 编码格式
+├── .env.development           // 开发环境配置
+├── .env.production            // 生产环境配置
+├── .env.staging               // 测试环境配置
+├── .eslintignore              // 忽略语法检查
+├── .eslintrc.js               // eslint 配置项
+├── .gitignore                 // git 忽略项
+├── babel.config.js            // babel.config.js
+├── package.json               // package.json
+└── vue.config.js              // vue.config.js
+~~~
+
+
+## 技术选型
+
+- npm：node.js的包管理工具，用于统一管理我们前端项目中需要用到的包、插件、工具、命令等，便于开发和维护。
+- ES6：Javascript的新版本，ECMAScript6的简称。利用ES6我们可以简化我们的JS代码，同时利用其提供的强大功能来快速实现JS逻辑。
+- vue-cli：Vue的脚手架工具，用于自动生成Vue项目的目录及文件。
+- vue-router： Vue提供的前端路由工具，利用其我们实现页面的路由控制，局部刷新及按需加载，构建单页应用，实现前后端分离。
+- vuex：Vue提供的状态管理工具，用于统一管理我们项目中各种数据的交互和重用，存储我们需要用到数据对象。
+- element-ui：基于MVVM框架Vue开源出来的一套前端ui组件。
+
+
+## 参考文档
+
+- [开发手册](http://doc.ruoyi.vip/ruoyi-cloud/document/qdsc.html#%E5%89%8D%E7%AB%AF%E6%89%8B%E5%86%8C)
+
+
+
+# 开发
+
+## 开始开发
 
 ```bash
 # 克隆项目
@@ -18,6 +74,7 @@ npm run dev
 ```
 
 浏览器访问 http://localhost:80
+
 
 ## 发布
 
