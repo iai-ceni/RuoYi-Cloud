@@ -3,7 +3,7 @@
 ## 工程结构
 
 ~~~
-├── build                      // 构建相关  
+├── build                      // 构建相关
 ├── bin                        // 执行脚本
 ├── public                     // 公共文件
 │   ├── favicon.ico            // favicon图标
