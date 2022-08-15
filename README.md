@@ -1,3 +1,6 @@
+
+# 原框架说明
+
 <p align="center">
 	<img alt="logo" src="https://oscimg.oschina.net/oscnet/up-b99b286755aef70355a7084753f89cdb7c9.png">
 </p>
@@ -44,6 +47,7 @@ com.ruoyi
 │       └── ruoyi-gen                                 // 代码生成 [9202]
 │       └── ruoyi-job                                 // 定时任务 [9203]
 │       └── ruoyi-file                                // 文件服务 [9300]
+│       └── flow-detect-api                           // 流量检测服务 [9301]
 ├── ruoyi-visual          // 图形化管理模块
 │       └── ruoyi-visual-monitor                      // 监控中心 [9100]
 ├──pom.xml                // 公共依赖
@@ -132,6 +136,8 @@ com.ruoyi
 QQ群： [![加入QQ群](https://img.shields.io/badge/已满-42799195-blue.svg)](https://jq.qq.com/?_wv=1027&k=yqInfq0S) [![加入QQ群](https://img.shields.io/badge/已满-170157040-blue.svg)](https://jq.qq.com/?_wv=1027&k=Oy1mb3p8) [![加入QQ群](https://img.shields.io/badge/已满-130643120-blue.svg)](https://jq.qq.com/?_wv=1027&k=rvxkJtXK) [![加入QQ群](https://img.shields.io/badge/已满-225920371-blue.svg)](https://jq.qq.com/?_wv=1027&k=0Ck3PvTe) [![加入QQ群](https://img.shields.io/badge/已满-201705537-blue.svg)](https://jq.qq.com/?_wv=1027&k=FnHHP4TT) [![加入QQ群](https://img.shields.io/badge/已满-236543183-blue.svg)](https://jq.qq.com/?_wv=1027&k=qdT1Ojpz) [![加入QQ群](https://img.shields.io/badge/已满-213618602-blue.svg)](https://jq.qq.com/?_wv=1027&k=nw3OiyXs) [![加入QQ群](https://img.shields.io/badge/148794840-blue.svg)](https://jq.qq.com/?_wv=1027&k=kiU5WDls) 点击按钮入群。
 
 
+# 本项目相关
+
 ## 运行步骤
 
 - [参考文档](http://doc.ruoyi.vip/ruoyi-cloud/document/hjbs.html#%E8%BF%90%E8%A1%8C%E7%B3%BB%E7%BB%9F)
@@ -144,15 +150,24 @@ QQ群： [![加入QQ群](https://img.shields.io/badge/已满-42799195-blue.svg)]
 
 ### Nacos
 
-Nacos 安装并修改 `conf/application.properties` 中的数据库后，在 `Nacos` 中可以修改多个配置信息
+- 大部分配置在 `Nacos` 中
+- `Nacos` 安装并修改 `conf/application.properties` 中的数据库后，在 `Nacos` 中可以修改多个配置信息
 
 
 ### 运行必要的程序
 
-- 修改 Nacos 中的配置，运行即可
+- 修改 `Nacos` 中的配置，运行即可
 
 
 ### 其他程序
 
-- 修改 Nacos 中的配置，运行即可
+- 修改 `Nacos` 中的配置，运行即可
  
+
+## 访问方式
+
+- 统一通过 `gateway` 访问，具体配置在 `Nacos`-`ruoyi-gateway-dev.yml`中查看或添加修改
+- 需要登录，拿到令牌的接口，可查看`auth`模块中`TokenController`中的`login`方法
+
+
+
