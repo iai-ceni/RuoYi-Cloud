@@ -131,12 +131,13 @@ com.ruoyi
 </table>
 
 
-## 若依微服务交流群
-
-QQ群： [![加入QQ群](https://img.shields.io/badge/已满-42799195-blue.svg)](https://jq.qq.com/?_wv=1027&k=yqInfq0S) [![加入QQ群](https://img.shields.io/badge/已满-170157040-blue.svg)](https://jq.qq.com/?_wv=1027&k=Oy1mb3p8) [![加入QQ群](https://img.shields.io/badge/已满-130643120-blue.svg)](https://jq.qq.com/?_wv=1027&k=rvxkJtXK) [![加入QQ群](https://img.shields.io/badge/已满-225920371-blue.svg)](https://jq.qq.com/?_wv=1027&k=0Ck3PvTe) [![加入QQ群](https://img.shields.io/badge/已满-201705537-blue.svg)](https://jq.qq.com/?_wv=1027&k=FnHHP4TT) [![加入QQ群](https://img.shields.io/badge/已满-236543183-blue.svg)](https://jq.qq.com/?_wv=1027&k=qdT1Ojpz) [![加入QQ群](https://img.shields.io/badge/已满-213618602-blue.svg)](https://jq.qq.com/?_wv=1027&k=nw3OiyXs) [![加入QQ群](https://img.shields.io/badge/148794840-blue.svg)](https://jq.qq.com/?_wv=1027&k=kiU5WDls) 点击按钮入群。
-
-
 # 本项目相关
+
+## branch
+
+- master: 保留原项目，用以拉取原项目更新，合并重要更新到自己的分支；请不要往 `master merge` 代码
+- fd: flow-detect，流量检测项目分支；可将`master`中需要的`commit`使用`git cherry-pick`合并到此分支
+
 
 ## 运行步骤
 
